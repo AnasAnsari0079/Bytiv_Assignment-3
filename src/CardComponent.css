@@ -1,0 +1,191 @@
+.card {
+    width: 320px;
+    height: 50vh;                 /* Set card height to 55% of the viewport height */
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;             /* Hide any content that overflows */
+    margin: 10px;
+    padding: 11px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;                /* Flexbox for layout control */
+    flex-direction: column;       /* Ensure header, body, and footer are in column layout */
+    justify-content: space-between; /* Distribute space between header, body, and footer */
+}
+
+
+.card-header {
+    background-color: #f4f4f4;
+    height: 60%;
+    margin-top: -10px;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    width: 320px;
+    left: -10px;
+    
+}
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.image-icon {
+    width:200px;
+    height: 115%;
+    background-color: #eaeaea;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    margin-top: 102px;
+    overflow: hidden; /* Ensure content doesn't overflow */
+}
+
+.user-icon {
+    padding-top: 55px;
+    font-size: 190px;
+    color: #ccc;
+}
+
+.image-text {
+    color: #b3171a;
+    font-size: 13px;
+    font-weight: bold;
+    text-align: center;
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    padding: 0 10px; /* Padding to fit the text inside the circle */
+}
+
+.documentation-link {
+    font-size: 10px;               /* Match the font size with the span */
+    color: #040404;                /* Blue color for the link */
+    text-decoration: underline;    /* Underline the link */
+    font-weight: normal;           /* Normal weight for the link text */
+    cursor: pointer;               /* Pointer cursor on hover */
+    top: 147px;
+    position: relative;
+    left: 1px;
+    vertical-align: middle;        /* Align with the span vertically */
+}
+
+.documentation-link:hover {
+    color: #0056b3;                /* Darker blue on hover */
+    text-decoration: none;         /* Remove underline on hover */
+}
+
+
+.card-body {
+    height: 47%;
+    padding: 5px;
+    text-align: left;
+    line-height: 10px;
+}
+
+.card-body h2 {
+    margin: 10px 0;
+    font-size: 16px;
+    font-weight: 500;  /* Adjust weight to match the style in the image */
+    color: #333;  /* Use a slightly darker color for better readability */
+    text-align: left; /* Align the name to the left */
+    padding-left: 1px; /* Add some padding to align with the text */
+}
+
+
+.card-body p {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+    color: #a8a3a3;
+    font-size: 14px;
+}
+
+.card-body p svg {
+    margin-right: 8px;
+}
+
+.card-body a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.card-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px;
+    background-color: #f4f4f4;
+    border-top: 1px solid #ccc;
+    margin: -10px;
+    height: 53px;
+}
+
+.footer-button {
+    background: none;
+    border: none;
+    color: #333;
+    font-size: 20px;
+    cursor: pointer;
+    padding: 5px;
+    transition: color 0.3s;
+}
+
+.footer-button:hover {
+    color: #007bff;
+}
+
+.footer-button:focus {
+    outline: none;
+}
+
+.heart-button {
+    background: none;
+    border: none;
+    color: #ff4d4f; /* Red color for the heart icon */
+    font-size: 23px;
+    cursor: pointer;
+    padding: 5px;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.heart-button:hover {
+    color: #ff1a1a; /* Darker red on hover */
+    transform: scale(1.1); /* Slightly enlarge the icon on hover */
+}
+
+.heart-button:focus {
+    outline: none;
+}
+
+@media (max-width: 600px) {
+    .image-icon {
+        width: 60%;              /* Adjust icon size on small screens */
+        height: 113%;
+    }
+
+    .user-icon {
+        padding-top: 60px;
+        font-size: 190px;
+        color: #ccc;          /* Adjust font size based on screen width */
+    }
+
+    .image-text {
+        font-size: 12px;
+        bottom: 14px;          /* Adjust text size for readability */
+    }
+    .documentation-link {
+        font-size: 10px;               /* Match the font size with the span */              /* Pointer cursor on hover */
+        top: 142px;
+        position: relative;
+        left: 1px;
+    }
+}
+
+
